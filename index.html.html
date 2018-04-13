@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Line Item Generator</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <img src="carlsonlogo.jpg" id="logo">
+    <h4>Service Division - Line Item Generator</h4>
+  </div>
+  <div id="left">
+    <div id="setRepairItems">
+      <br>
+      <ol id="repairItems">
+        <li><input type="text" value="Open Flashing"></input>
+          <button class="itemClose">&times</button></li>
+        <li><input type="text" value="Open Sealant"></input>
+          <button class="itemClose">&times</button></li>
+        <li><input type="text" value="Open Pitch Pocket"></input>
+          <button class="itemClose">&times</button></li>
+        <li><input type="text" value="Debris"></input>
+          <button class="itemClose">&times</button></li>
+        <li><input type="text" value="Blister"></input>
+          <button class="itemClose">&times</button></li>
+        <li><input type="text" value="Gravel In Drain"></input>
+          <button class="itemClose">&times</button></li>
+        <li><input type="text" value="Open T-Lap"></input>
+          <button class="itemClose">&times</button></li>
+      </ol>
+      <br>
+      <button id="addItem">Add Item</button>
+      <button id="resetItem">Reset Items</button>
+      <button id="confirmItem">Confirm Items</button>
+
+    </div>
+    <div id="areaQuestion">
+      How many roof areas do you need? <br>
+      <br>
+      <input type="number" id="areaAmount"></input>
+      <button id="areaSubmit">Submit</button>
+      <button id="confirmAreas">Confirm Areas</button>
+    </div>
+    <div id="areaList">
+    </div>
+    <button id="confirmAreaItems">Confirm Area Items</button>
+    <button id="generate">Generate Text</button>
+
+  </div>
+  <div id="middle">
+    <div id="itemDisplay">
+      <h4>Categories</h4>
+    </div>
+  </div>
+  <div id="right">
+    <div id="guide">
+      <div id="step1">
+        <h4>Step 1</h4>
+        <p>Add, remove, or edit any line item categories as needed. When you're done, click confirm.</p>
+      </div>
+      <div id="step2">
+        <h4>Step 2</h4>
+        <p>Determine how many roof areas there will be. Add, remove, or edit any roof area as needed. When you're done, click confirm.</p>
+      </div>
+      <div id="step3">
+        <h4>Step 3</h4>
+        <p>Enter the number representing each line item category that is needed for each roof area. Each category number must be separated by a space.
+          <br><br><i>Example:</i>    <b>RA #1</b> <input class="repairItemsInput" value="1 3 4" style="pointer-events: none; width: 100px;"></input><br><br>
+          If a roof area does not need any repair work done, you can leave it blank.
+        </p>
+      </div>
+      <div id="step4">
+        <h4>Step 4</h4>
+        <p>Enter how many locations there are for each repair item. When you're done, click generate.</p>
+      </div>
+      <div id="step5">
+        <h4>Step 5</h4>
+        <p>Copy and paste the text into Dataforma or Microsoft Word.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
